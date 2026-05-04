@@ -18,7 +18,9 @@ Dataset from Kaggle :  ([link](https://www.kaggle.com/datasets/willyard/spam-ema
 ├── models
 │   └── spam_classifier.pkl
 ├── notebooks
-│   └── dataset_exploration.ipynb
+│   └── 01_dataset_exploration.ipynb
+│   └── 02_model_evaluation.ipynb
+│   └── 03_api_demo.ipynb
 ├── README.md
 ├── requirements.txt
 ├── results
