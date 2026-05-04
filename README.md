@@ -66,6 +66,21 @@ python service/spam_classification_service.py
 Open your browser and go to [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 You can then interact with the API by entering the email text in the text area and clicking the `PREDICT!` button to get the result.
 
+You can also interact with the API directly from Python using the `requests` library.
+
+```python
+import requests
+
+API_URL = "http://127.0.0.1:5000/predict"
+
+text = "Congratulations! You won a free prize!"
+
+response = requests.get(API_URL, params={"text": text})
+result = response.json()
+
+print(result)
+```
+
 ## Output format
 The API returns a JSON response with the following fields:
 
